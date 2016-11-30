@@ -9,10 +9,13 @@ username = 'yourcamid'
 password = 'yourcampassword'
 yourphone = '0044XXXXXXXXXX'
 message = 'Hi Lu, your boss kicked your ass!'
+mybosses = ["A@gmail.com","B@cam.ac.uk"] #add your email list here
 
 interval = 300 # time interval between two checks, in seconds
 messagebird_secret = 'live_XXXXXXXXXXXXXXXXXXXXXXXXX'
-
+# message bird is a message api service provider. see https://www.messagebird.com/en-gb/, 
+# Each voice call cost you 2 pence. 
+# A more popular provider is twilio.
 
 
 
@@ -22,7 +25,10 @@ parser = OptionParser()
 parser.add_option("-l", "--log", dest="loglevel", help="log level")
 (options, args) = parser.parse_args()
 usrloglevel = getattr(logging, options.loglevel.upper())
-logging.basicConfig(level=usrloglevel, format='%(asctime)s - %(name)s [%(levelname)s]: %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+logging.basicConfig(level=usrloglevel, 
+                    format='%(asctime)s - %(name)s [%(levelname)s]: %(message)s', 
+                    datefmt='%m/%d/%Y %I:%M:%S %p')
+
 
 # note that if you want to get text content (body) and the email contains
 # multiple payloads (plaintext/ html), you must parse each message separately.
@@ -48,8 +54,8 @@ while True:
     	mail.select("inbox",readonly=True) # connect to inbox.
 
     	date = (datetime.date.today() - datetime.timedelta(1)).strftime("%d-%b-%Y")
-    	senderList = ["giancarlo.corsetti@gmail.com","mc865@cam.ac.uk","crowley.meredith@gmail.com","zl290@cam.ac.uk","hanlulong@gmail.com"]
-
+    	senderList = mybosses
+        
     	for sender in senderList:
             result, data = mail.uid('search', None, '(UNSEEN SENTSINCE {date} FROM {sender})'.format(date=date,sender=sender))
 
@@ -69,9 +75,10 @@ while True:
                             message,
                             { 'language' : 'en-gb', 'voice': 'male' }
                             )
-
-    	logging.info('Sleeping for 5 minutes.')
-    	sleep(300)
+                # you can overwrite the setting for message and voice. For details, please refer to 
+        inter_min = interval/60
+    	logging.info('Sleeping for %s minutes.' % inter_min )
+    	sleep(interval)
     except Exception as e:    
     	log.error("Error in %s", e)
         pass
