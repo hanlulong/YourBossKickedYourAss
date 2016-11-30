@@ -6,7 +6,7 @@
 * If you do not read your boss's email, the program will keep calling you every x minutes. 
 
 # Voice call service 
-I use messagebird as the voice call service provider and each voice call to UK number costs 2 pences. An alternative provider would be Twilio.
+I use messagebird as the voice call service provider and each voice call to UK number costs 2 pences. An alternative provider could be Twilio.
 
 # Installation 
 0. Requirment: Python 2.7 (tested on Python 2.7 only, may work on Python3)
