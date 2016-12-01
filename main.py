@@ -13,7 +13,7 @@ mybosses = ["A@gmail.com","B@cam.ac.uk"] #add your email list here
 
 interval = 300 # time interval between two checks, in seconds
 messagebird_secret = 'live_XXXXXXXXXXXXXXXXXXXXXXXXX'
-# message bird is a message api service provider. see https://www.messagebird.com/en-gb/, 
+# Messagebird is a message api service provider. see https://www.messagebird.com/en-gb/, 
 # Each voice call cost you 2 pence. 
 # A more popular provider is twilio.
 
@@ -76,6 +76,7 @@ while True:
                             { 'language' : 'en-gb', 'voice': 'male' }
                             )
                 # you can overwrite the setting for message and voice. For details, please refer to 
+                # https://developers.messagebird.com/docs/voice
         inter_min = interval/60
     	logging.info('Sleeping for %s minutes.' % inter_min )
     	sleep(interval)
