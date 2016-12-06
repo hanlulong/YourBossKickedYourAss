@@ -7,14 +7,14 @@
 
 ## Installation 
 1. Copy or clone this repository to your local directory.
-2. Edit your info in config.json: 
+2. Edit your info in config.json 
     * messagebird_secret: no need to change for initial trials.
     * greetings: please DIY.
     * mybosses: a list of your bosses' emails.
     * phonenumbers: a list of phone numbers to be called.
     * interval: the time interval between two checks. Measured in minutes.
     * run_on_windows_startup: if you want the program auto start after each reboot. Only tested on Windows 7.    
-3. Run mail_checker.exe.
+3. Run mail_checker.exe
 
 
 ## Voice call service 
