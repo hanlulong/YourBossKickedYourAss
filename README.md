@@ -7,7 +7,7 @@
 
 ## Installation 
 
-Requirments: Windows OS, connected to internet
+Requirements: Windows OS, connected to internet
 
 1. Clone or copy (click the green button at the top right corner) this repository to your local directory. 
 2. Edit your info in config.json (username, password, etc.)
