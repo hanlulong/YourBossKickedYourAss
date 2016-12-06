@@ -1,6 +1,6 @@
 # Your Boss Kicked Your Ass
 
-* Connect to your cam hermes email and/or gmail account.
+* Connect to your Cambridge Hermes email and/or Gmail account.
 * Check incoming mails every x minutes.
 * Call/message you if you received an email from your boss.  
 * If you do not read your boss' email, the program will keep calling you every x minutes. 
