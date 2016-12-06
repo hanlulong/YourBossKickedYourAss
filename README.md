@@ -23,4 +23,4 @@ I use Messagebird as the voice call service provider and each voice call to UK n
 An alternative message api provider is Twilio.
 
 ## Remote control
-* You could save the this repository in your dropbox folder. And then edit config.json file through your dropbox. The program will use your new settings in its next check.
+* You could save the this repository into your dropbox folder. And then edit config.json file through your dropbox. The program will use your new settings in its next check.
