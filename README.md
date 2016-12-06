@@ -1,4 +1,4 @@
-# YourBossKickedYourAss
+# Your Boss Kicked Your Ass
 
 * Connect to your cam hermes email and/or gmail account.
 * Check incoming mails every x minutes.
