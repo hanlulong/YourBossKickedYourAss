@@ -7,6 +7,7 @@ import argparse
 import os, sys
 import json
 import getpass
+from _winreg import *
 
 import messagebird
 # Messagebird is a message api service provider. see https://www.messagebird.com/en-gb/,
@@ -45,6 +46,7 @@ def init_config(account_index):
     parser.add_argument("-n", "--phonenumbers", help="List of My Phone Numbers")
     parser.add_argument("-m", "--greetings", help="Your Greetings")
     parser.add_argument("-t", "--interval", help="Time Interval Between 2 Checks")
+    parser.add_argument("-r", "--startup", help="Run on Windows startup")
     config = parser.parse_args()
 
     config.__dict__["messagebird_secret"] = load['messagebird_secret']
@@ -52,6 +54,7 @@ def init_config(account_index):
     config.__dict__["phonenumbers"] = load['phonenumbers']
     config.__dict__["greetings"] = load['greetings']
     config.__dict__["interval"] = load['interval']
+    config.__dict__["run_on_windows_startup"] = load['run_on_windows_startup']
 
     load = load['accounts'][account_index]
     # Passed in arguments shoud trump
@@ -89,6 +92,19 @@ def get_first_text_block(email_message_instance):
                 return part.get_payload()
     elif maintype == 'text':
         return email_message_instance.get_payload()
+
+
+def addStartup():
+    fp = os.path.dirname(os.path.realpath(__file__))
+    file_name = sys.argv[0].split("\\")[-1]
+    new_file_path = fp + "\\" + file_name
+
+    keyVal = r'Software\Microsoft\Windows\CurrentVersion\Run'
+
+    key2change = OpenKey(HKEY_CURRENT_USER,
+                         keyVal, 0, KEY_WRITE)
+    SetValueEx(key2change, "Mail Checker", 0, REG_SZ, new_file_path)
+
 
 def main():
     load = load_config()
@@ -158,7 +174,20 @@ if __name__ == '__main__':
     print " "
     sleep(5)
 
+    if config.run_on_windows_startup == 1:
+        addStartup()
+
     while True:
-        main()
-        logging.info('Sleeping for %s minutes.' % config.interval)
-        sleep(config.interval * 60)
+        try:
+            main()
+            logging.info('Sleeping for %s minutes.' % config.interval)
+            sleep(config.interval * 60)
+        except:
+            client = messagebird.Client(config.messagebird_secret)
+            for number in config.phonenumbers:
+                message = client.voice_message_create(
+                    number,
+                    "An error in the mail checker. Please contact Lu Han at lh420@cam.ac.uk",
+                    {'language': 'en-gb', 'voice': 'male'}
+                )
+            raise
