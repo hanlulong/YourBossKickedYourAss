@@ -6,7 +6,7 @@
 * If you do not read your boss' email, the program will keep calling you every x minutes. 
 
 ## Installation 
-1. Copy or clone this repository to your local directory.
+1. Clone or copy (click the green button on the top right corner) this repository to your local directory . 
 2. Edit your info in config.json (username, password, etc.)
     * messagebird_secret: no need to change for initial trials.
     * greetings: please DIY.
@@ -14,6 +14,8 @@
     * phonenumbers: a list of phone numbers to be called.
     * interval: the time interval between two checks. Measured in minutes.
     * run_on_windows_startup: if you want the program auto start after each reboot. Only tested on Windows 7.    
+   If you are using Windows Notepad to edit json files, please make sure to save your edited file in json format. 
+   File -> Save as -> Save as type -> All Files (*.*)    
 3. Run mail_checker.exe
 
 
