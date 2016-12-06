@@ -13,7 +13,7 @@
     * mybosses: a list of your bosses' emails.
     * phonenumbers: a list of phone numbers to be called.
     * interval: the time interval between two checks. Measured in minutes.
-    * run_on_windows_startup: if you want the program auto start after each reboot. Only tested on Windows 7.    
+    * run_on_windows_startup: if you want the program to auto start after each reboot. Only tested on Windows 7.    
     
    If you are using Windows Notepad to edit json files, please make sure to save your edited file in json format. 
    File -> Save as -> Save as type -> All Files (\*.\*) -> Click OK   
