@@ -11,7 +11,7 @@
     * messagebird_secret: no need to change for initial trials.
     * greetings: please DIY.
     * mybosses: a list of your bosses' emails.
-    * phonenumber: a list of phone numbers to be called.
+    * phonenumbers: a list of phone numbers to be called.
     * interval: the time between two checks. Measured in minutes.
     * run_on_windows_startup: if you want the program auto start after each reboot. Only tested on Windows 7.    
 3. Run mail_checker.exe
