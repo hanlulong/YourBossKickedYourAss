@@ -114,7 +114,7 @@ def main():
         if not config:
             return
 
-        logging.info("Checking for %s server: USERNAME %s." % (config.auth_service, config.username))
+        logging.info("Checking %s server: USERNAME %s." % (config.auth_service, config.username))
 
         try:
             if config.auth_service == 'cam':
