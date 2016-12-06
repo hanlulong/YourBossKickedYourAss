@@ -16,7 +16,7 @@
     * run_on_windows_startup: if you want the program auto start after each reboot. Only tested on Windows 7.    
     
    If you are using Windows Notepad to edit json files, please make sure to save your edited file in json format. 
-   File -> Save as -> Save as type -> All Files (\*.\*)    
+   File -> Save as -> Save as type -> All Files (\*.\*) -> Click OK   
 3. Run mail_checker.exe
 
 
