@@ -1,6 +1,6 @@
 # YourBossKickedYourAss
 
-* Connect to your cam email.
+* Connect to your cam hermes email and/or gmail account.
 * Check incoming mails every x minutes.
 * Call/Message you if you received an email from your boss.  
 * If you do not read your boss' email, the program will keep calling you every x minutes. 
