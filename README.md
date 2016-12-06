@@ -6,7 +6,7 @@
 * If you do not read your boss' email, the program will keep calling you every x minutes. 
 
 ## Installation 
-1. Copy or clone this repository 
+1. Copy or clone this repository to your local directory
 2. Edit your info in config.json 
     * messagebird_secret: no need to change for initial trials.
     * greetings: please DIY.
