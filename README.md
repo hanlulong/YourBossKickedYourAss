@@ -7,7 +7,13 @@
 
 # Installation 
 1. Copy or clone this repository 
-2. Edit your info in config.json (camid, mail list, phone number, messagebird_api_serect, etc.)
+2. Edit your info in config.json 
+    * messagebird_secret: no need to change for initial trials.
+    * greetings: please DIY.
+    * mybosses: a list of your bosses' emails.
+    * phonenumber: a list of phone numbers to be called.
+    * iterval: the time between two checks. Measured in minutes.
+    * run_on_windows_startup: if you want the program auto start after each reboot. Only tested on Windows 7.    
 3. Run main.exe
 
 
@@ -16,8 +22,5 @@ I use messagebird as the voice call service provider and each voice call to UK n
 
 An alternative message api provider is Twilio.
 
-# 
-1. Auto start in windows
-
-2. Remote control over settings.
+# Remote control
 * You could save the this repository in your dropbox folder. And then edit the config.json file through your dropbox.
