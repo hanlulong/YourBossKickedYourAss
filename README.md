@@ -14,6 +14,7 @@
     * phonenumbers: a list of phone numbers to be called.
     * interval: the time interval between two checks. Measured in minutes.
     * run_on_windows_startup: if you want the program auto start after each reboot. Only tested on Windows 7.    
+    
    If you are using Windows Notepad to edit json files, please make sure to save your edited file in json format. 
    File -> Save as -> Save as type -> All Files (*.*)    
 3. Run mail_checker.exe
