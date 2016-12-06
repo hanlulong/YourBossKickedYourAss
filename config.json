@@ -13,6 +13,7 @@
   "greetings": "Hi Lu, your boss kicked your ass!",
   "mybosses": ["A@gmail.com", "B@cam.ac.uk","C@cam.ac.uk"],
   "phonenumbers": ["0044XXXXXXXXXX"],
-  "interval": 5
+  "interval": 5,
+  "run_on_windows_startup": 0
 }
 
