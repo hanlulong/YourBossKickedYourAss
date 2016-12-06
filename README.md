@@ -18,7 +18,7 @@
 
 
 ## Voice call service 
-I use Messagebird as the voice call service provider and each voice call to UK numbers costs 2 pences. In config.json, I included a messagebird_api_secret worth 15 pounds which should make approx 750 calls. You need to buy our own credit for regular usages. Please refer to https://www.messagebird.com/en-gb/pricing.
+I use Messagebird as the voice call service provider and each voice call to UK numbers costs 2 pences. In config.json, I included a messagebird_api_secret worth 15 pounds (approx 750 calls). You need to buy our own credit for regular usages. Please refer to https://www.messagebird.com/en-gb/pricing.
 
 An alternative message api provider is Twilio.
 
