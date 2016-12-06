@@ -7,7 +7,7 @@
 
 ## Installation 
 1. Copy or clone this repository to your local directory.
-2. Edit your info in config.json 
+2. Edit your info in config.json (username, password, etc.)
     * messagebird_secret: no need to change for initial trials.
     * greetings: please DIY.
     * mybosses: a list of your bosses' emails.
