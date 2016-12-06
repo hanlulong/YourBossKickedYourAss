@@ -1,0 +1,18 @@
+{"accounts" :
+   [{
+       "auth_service": "cam",
+       "username": "camid",
+       "password": "yourpassword"
+    },{
+       "auth_service": "gmail",
+       "username": "gmailaccount",
+       "password": "yourpassword"
+    }
+   ],
+  "messagebird_secret": "live_SerBs7xs8x6aAJgTLUTSzGPWy",
+  "greetings": "Hi Lu, your boss kicked your ass!",
+  "mybosses": ["A@gmail.com", "B@cam.ac.uk","C@cam.ac.uk"],
+  "phonenumbers": ["0044XXXXXXXXXX"],
+  "interval": 5
+}
+
