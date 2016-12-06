@@ -3,7 +3,7 @@
 * Connect to your cam email.
 * Check incoming mails every x minutes.
 * Call/Message you if you received an email from your boss.  
-* If you do not read your boss email, the program will keep calling you every x minutes. 
+* If you do not read your boss' email, the program will keep calling you every x minutes. 
 
 # Voice call service 
 I use messagebird as the voice call service provider and each voice call to UK numbers costs 2 pences. An alternative provider could be Twilio.
