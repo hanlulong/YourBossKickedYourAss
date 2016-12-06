@@ -14,7 +14,7 @@
     * phonenumber: a list of phone numbers to be called.
     * iterval: the time between two checks. Measured in minutes.
     * run_on_windows_startup: if you want the program auto start after each reboot. Only tested on Windows 7.    
-3. Run main.exe
+3. Run mail_checker.exe
 
 
 ## Voice call service 
