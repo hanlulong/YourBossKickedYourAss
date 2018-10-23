@@ -1,4 +1,4 @@
-# Your Boss Kicked Your Ass
+# Hermes and Google Mail Reminder
 
 * Connect to your Cambridge Hermes email and/or Gmail account.
 * Check incoming mails every x minutes.
